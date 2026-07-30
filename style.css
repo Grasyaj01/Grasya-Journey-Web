@@ -108,31 +108,19 @@ header{
     display:flex;
     justify-content:center;
     align-items:center;
+    padding:20px;
 }
 
 .hero-image img{
     width:100%;
-    max-width:520px;
+    max-width:550px;
     height:auto;
+    display:block;
     border-radius:20px;
-
-}
-
-.hero-book{
-    position:absolute;
-    width:260px;
-    right:20px;
-    bottom:-20px;
-    filter:drop-shadow(0 20px 30px rgba(0,0,0,.25));
-    transition:.3s;
-}
-
-.hero-book:hover{
-    transform:translateY(-8px);
 }
 
 .logo img{
-    height:80px;
+    height:60px;
     width:auto;
     display:block;
 }
@@ -313,4 +301,15 @@ nav ul{
     text-align:center;
 }
 
+.hero-image{
+    margin-top:30px;
+}
+
+.hero-image img{
+    max-width:380px;
+}
+
+.hero-text p{
+    font-size:18px;
+}   
 }
