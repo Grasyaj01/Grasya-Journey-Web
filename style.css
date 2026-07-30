@@ -105,14 +105,29 @@ header{
 
 .hero-image{
     flex:1;
-    text-align:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-.hero-image img{
+.hero-bg{
     width:100%;
-    max-width:420px;
-    border-radius:18px;
-    box-shadow:0 15px 45px rgba(0,0,0,.12);
+    max-width:550px;
+    border-radius:20px;
+}
+
+.hero-book{
+    position:absolute;
+    width:260px;
+    right:20px;
+    bottom:-20px;
+    filter:drop-shadow(0 20px 30px rgba(0,0,0,.25));
+    transition:.3s;
+}
+
+.hero-book:hover{
+    transform:translateY(-8px);
 }
 
 .logo img{
