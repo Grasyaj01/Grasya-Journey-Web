@@ -1,315 +1,389 @@
-/* =========================
-   GRASYA JOURNEY
-   STYLE.CSS
-========================= */
-
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    font-family:'Poppins',sans-serif;
-    background:#F8F6F2;
-    color:#333;
-    line-height:1.7;
-}
 
-/* =========================
-   NAVBAR
-========================= */
+font-family:Poppins,sans-serif;
+background:#F8F6F2;
+color:#333;
+
+}
 
 nav{
-    width:100%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 8%;
-    background:#ffffff;
-    position:sticky;
-    top:0;
-    z-index:999;
-    box-shadow:0 2px 15px rgba(0,0,0,.05);
-}
 
-.logo{
-    display:flex;
-    align-items:center;
-}
+display:flex;
+justify-content:space-between;
+align-items:center;
 
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:35px;
-}
+padding:20px 8%;
 
-nav a{
-    text-decoration:none;
-    color:#444;
-    transition:.3s;
-}
+background:white;
 
-nav a:hover{
-    color:#667A4E;
-}
+position:sticky;
 
-.btn-nav{
-    background:#667A4E;
-    color:#fff;
-    padding:12px 22px;
-    border-radius:10px;
-    text-decoration:none;
-    transition:.3s;
-}
+top:0;
 
-.btn-nav:hover{
-    background:#556640;
-}
+z-index:999;
 
-/* =========================
-   HERO
-========================= */
+box-shadow:0 3px 15px rgba(0,0,0,.06);
 
-header{
-    max-width:1200px;
-    margin:auto;
-    padding:80px 8%;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:50px;
-}
-
-.hero-text{
-    flex:1;
-}
-
-.hero-text h1{
-    font-family:'Playfair Display',serif;
-    font-size:56px;
-    line-height:1.2;
-    margin-bottom:25px;
-    color:#2F2F2F;
-}
-
-.hero-text p{
-    font-size:20px;
-    color:#666;
-    margin-bottom:35px;
-}
-
-.hero-image{
-    flex:1;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:20px;
-}
-
-.hero-image img{
-    width:100%;
-    max-width:550px;
-    height:auto;
-    display:block;
-    border-radius:20px;
 }
 
 .logo img{
-    height:60px;
-    width:auto;
-    display:block;
-}
 
-.btn{
-    display:inline-block;
-    background:#667A4E;
-    color:white;
-    padding:18px 38px;
-    border-radius:12px;
-    text-decoration:none;
-    font-weight:600;
-    transition:.3s;
-}
+height:58px;
 
-.btn:hover{
-    transform:translateY(-3px);
-    background:#556640;
-}
-
-/* =========================
-   SECTION
-========================= */
-
-section{
-    max-width:1200px;
-    margin:auto;
-    padding:90px 8%;
-}
-
-section h2{
-    text-align:center;
-    font-size:42px;
-    margin-bottom:60px;
-    font-family:'Playfair Display',serif;
-}
-
-/* =========================
-   CARD
-========================= */
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
-}
-
-.card{
-    background:white;
-    border-radius:18px;
-    padding:35px;
-    text-align:center;
-    transition:.3s;
-    box-shadow:0 10px 30px rgba(0,0,0,.05);
-}
-
-.card:hover{
-    transform:translateY(-10px);
-}
-
-.card h3{
-    margin-bottom:15px;
-}
-
-/* =========================
-   CHECKLIST
-========================= */
-
-.checklist{
-    max-width:700px;
-    margin:auto;
-    list-style:none;
-}
-
-.checklist li{
-    background:white;
-    margin-bottom:18px;
-    padding:18px 25px;
-    border-radius:12px;
-    box-shadow:0 5px 20px rgba(0,0,0,.05);
-}
-
-/* =========================
-   CTA
-========================= */
-
-.cta{
-    text-align:center;
-    background:#667A4E;
-    color:white;
-    border-radius:25px;
-    margin:80px auto;
-}
-
-.cta h2{
-    color:white;
-    margin-bottom:20px;
-}
-
-.cta p{
-    margin-bottom:35px;
-    font-size:18px;
-}
-
-.cta .btn{
-    background:white;
-    color:#667A4E;
-}
-
-.cta .btn:hover{
-    background:#EFEFEF;
-}
-
-/* =========================
-   FAQ
-========================= */
-
-.accordion{
-    width:100%;
-    background:white;
-    border:none;
-    padding:22px;
-    text-align:left;
-    cursor:pointer;
-    font-size:18px;
-    margin-top:15px;
-    border-radius:12px;
-    box-shadow:0 4px 18px rgba(0,0,0,.05);
-}
-
-.panel{
-    display:none;
-    padding:20px;
-    background:white;
-    border-radius:0 0 12px 12px;
-    margin-bottom:15px;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-    background:#2E2E2E;
-    color:white;
-    text-align:center;
-    padding:40px;
-    margin-top:80px;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media(max-width:900px){
-
-header{
-    flex-direction:column;
-    text-align:center;
-}
-
-.hero-text h1{
-    font-size:40px;
-}
-
-.cards{
-    grid-template-columns:1fr;
-}
-
-nav{
-    flex-direction:column;
-    gap:20px;
 }
 
 nav ul{
-    flex-direction:column;
-    gap:15px;
-    text-align:center;
+
+display:flex;
+
+gap:35px;
+
+list-style:none;
+
 }
 
-.hero-image{
-    margin-top:30px;
+nav a{
+
+text-decoration:none;
+
+color:#555;
+
 }
 
-.hero-image img{
-    max-width:380px;
+.btn-nav{
+
+background:#667A4E;
+
+padding:12px 24px;
+
+border-radius:10px;
+
+color:white;
+
 }
 
-.hero-text p{
-    font-size:18px;
-}   
+.hero{
+
+background:url("assets/HERO.png");
+
+background-size:cover;
+
+background-position:center;
+
+position:relative;
+
+min-height:760px;
+
+display:flex;
+
+align-items:center;
+
+}
+
+.overlay{
+
+position:absolute;
+
+inset:0;
+
+background:rgba(255,250,242,.62);
+
+backdrop-filter:blur(1px);
+
+}
+
+.hero-content{
+
+position:relative;
+
+z-index:5;
+
+max-width:1200px;
+
+margin:auto;
+
+padding:70px 8%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:70px;
+
+}
+
+.hero-left{
+
+flex:1;
+
+}
+
+.hero-left h1{
+
+font-size:70px;
+
+color:#667A4E;
+
+margin-bottom:10px;
+
+}
+
+.hero-left h2{
+
+font-size:48px;
+
+line-height:1.2;
+
+margin-bottom:25px;
+
+}
+
+.hero-left p{
+
+font-size:20px;
+
+margin-bottom:40px;
+
+max-width:560px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+background:#667A4E;
+
+padding:18px 40px;
+
+border-radius:12px;
+
+color:white;
+
+text-decoration:none;
+
+font-weight:600;
+
+}
+
+.hero-right{
+
+flex:1;
+
+text-align:center;
+
+}
+
+.hero-right img{
+
+width:100%;
+
+max-width:500px;
+
+filter:drop-shadow(0 25px 40px rgba(0,0,0,.18));
+
+transition:.35s;
+
+}
+
+.hero-right img:hover{
+
+transform:translateY(-10px);
+
+}
+
+section{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:90px 8%;
+
+}
+
+section h2{
+
+text-align:center;
+
+font-size:40px;
+
+margin-bottom:50px;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+}
+
+.card{
+
+background:white;
+
+padding:35px;
+
+border-radius:18px;
+
+text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+}
+
+.checklist{
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+.checklist li{
+
+margin:18px 0;
+
+background:white;
+
+padding:18px;
+
+border-radius:12px;
+
+list-style:none;
+
+}
+
+.cta{
+
+background:#667A4E;
+
+color:white;
+
+border-radius:30px;
+
+text-align:center;
+
+}
+
+.cta h2{
+
+color:white;
+
+}
+
+.cta .btn{
+
+background:white;
+
+color:#667A4E;
+
+margin-top:20px;
+
+}
+
+.accordion{
+
+width:100%;
+
+padding:22px;
+
+margin-top:15px;
+
+background:white;
+
+border:none;
+
+border-radius:12px;
+
+cursor:pointer;
+
+}
+
+.panel{
+
+display:none;
+
+padding:20px;
+
+background:white;
+
+}
+
+footer{
+
+padding:50px;
+
+background:#2E2E2E;
+
+text-align:center;
+
+color:white;
+
+}
+
+footer img{
+
+height:55px;
+
+margin-bottom:20px;
+
+}
+
+@media(max-width:900px){
+
+.hero-content{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.hero-left h1{
+
+font-size:42px;
+
+}
+
+.hero-left h2{
+
+font-size:34px;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+nav{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+nav ul{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
 }
