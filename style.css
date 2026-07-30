@@ -76,6 +76,14 @@ a{
 
 }
 
+@media (max-width:768px){
+
+    .navbar{
+        position: static;
+        top: auto;
+    }
+
+}
 .nav-wrapper{
 
     display:flex;
