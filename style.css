@@ -38,10 +38,8 @@ nav{
 }
 
 .logo{
-    font-family:'Playfair Display',serif;
-    font-size:30px;
-    color:#667A4E;
-    font-weight:bold;
+    display:flex;
+    align-items:center;
 }
 
 nav ul{
@@ -115,6 +113,12 @@ header{
     max-width:420px;
     border-radius:18px;
     box-shadow:0 15px 45px rgba(0,0,0,.12);
+}
+
+.logo img{
+    height:60px;
+    width:auto;
+    display:block;
 }
 
 .btn{
