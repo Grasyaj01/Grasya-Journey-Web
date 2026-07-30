@@ -79,8 +79,8 @@ a{
 @media (max-width:768px){
 
     .navbar{
-        position: static;
-        top: auto;
+        position: relative;
+        top: 0;
     }
 
 }
