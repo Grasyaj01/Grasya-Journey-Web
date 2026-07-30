@@ -105,16 +105,17 @@ header{
 
 .hero-image{
     flex:1;
-    position:relative;
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
-.hero-bg{
+.hero-image img{
     width:100%;
-    max-width:550px;
+    max-width:520px;
+    height:auto;
     border-radius:20px;
+
 }
 
 .hero-book{
